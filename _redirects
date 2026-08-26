@@ -1,30 +1,20 @@
 # Cloudflare Pages redirects
 # https://developers.cloudflare.com/pages/configuration/redirects/
 #
-# Cloudflare Pages already serves /about from about.html and 301s /about.html
-# to /about, so same-name Squarespace slugs need no rule here. What follows is
-# only the paths whose destination CHANGED in the 2026 rebuild.
+# These are the REAL URLs from the live Squarespace site, confirmed by crawling
+# https://www.purevitalityinfusions.com on 2026-08-26. Seven of its nine slugs
+# (/about, /contact, /faq, /iv-therapy, /lab-draw, /mobile-infusions,
+# /red-light-therapy, /wellness-injections) map 1:1 onto pages in this repo and
+# resolve on their own, so they need no rule here.
+#
+# Only the paths whose destination actually CHANGED are listed below.
 
 # "Services" was its own Squarespace page; it is now a homepage section.
-/services              /#services              301
-/our-services          /#services              301
+/services         /#services      301
 
-# The "First Visit" / "What to Expect" page is gone. That content now lives on
-# each service page and in the FAQ.
-/first-visit           /faq                    301
-/what-to-expect        /faq                    301
+# Squarespace booking page — booking now runs through Vagaro, linked from
+# every "Book a visit" button, so send this to Contact rather than off-site.
+/appointments     /contact        301
 
-# Slug spellings that drifted on the old site.
-/mobile-infusion       /mobile-infusions       301
-/red-light             /red-light-therapy      301
-/red-light-therapy-1   /red-light-therapy      301
-/injections            /wellness-injections    301
-/labs                  /lab-draw               301
-/lab-draws             /lab-draw               301
-/iv-therapy-1          /iv-therapy             301
-/home                  /                       301
-
-# Booking has always been Vagaro-hosted.
-/book                  /contact                301
-/book-online           /contact                301
-/booking               /contact                301
+# Squarespace Commerce cart, which this site does not have.
+/cart             /contact        301

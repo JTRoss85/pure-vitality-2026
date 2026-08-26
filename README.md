@@ -118,12 +118,12 @@ gives it a rose underline.
 Because `/assets/*` is cached for a year as `immutable`, **give a replacement
 photo a new filename** rather than overwriting an existing one.
 
-### Outstanding asset
+### Photos in use
 
-`assets/photos/chelsey-portrait.jpg` does not exist yet. `index.html` and
-`about.html` both stand in `door-logo.jpg` and carry a
-`<!-- TODO: upload chelsey-portrait.jpg at 4:5 -->` comment at the slot. Add the
-real 4:5 portrait and update both `src` attributes.
+All six photo slots are filled. `chelsey-portrait.jpg` is her supplied photo,
+EXIF-rotated upright and cropped to 4:5 from the bottom so her face sits in the
+upper third. `bathroom.jpg` and `exterior.jpg` ship in the repo but are not
+currently placed on any page.
 
 ## Analytics
 
