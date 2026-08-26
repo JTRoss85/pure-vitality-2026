@@ -714,6 +714,12 @@ a:hover { color: var(--pv-plum); }
   white-space: nowrap;
 }
 
+/* Subheading between two stacked menus (e.g. pricing, then the panel list). */
+.pv-subhead {
+  margin-top: 44px;
+  margin-bottom: 14px;
+}
+
 /* --- two-up fact columns --- */
 .pv-cols {
   display: grid;
