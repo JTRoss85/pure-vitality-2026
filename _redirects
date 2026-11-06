@@ -18,3 +18,11 @@
 
 # Squarespace Commerce cart, which this site does not have.
 /cart             /contact        301
+
+# Old Squarespace pages Google still shows (seen in Search Console, Oct 29, 2026).
+# /new-page was the unedited Squarespace slug for the mobile infusions page.
+/new-page         /mobile-infusions   301
+/home             /                   301
+/home-1           /                   301
+/about-old        /about              301
+/contact-old      /contact            301
